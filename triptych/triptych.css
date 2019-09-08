@@ -1,0 +1,95 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.frame {
+  box-sizing: border-box;
+  width: 350px;
+  height: 500px;
+  margin: 8px;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+#frame-1 {
+  background: rgb(50, 50, 50);
+}
+
+#frame-2 {
+  background: linear-gradient(0, rgb(50, 50, 50) 0%, rgb(100, 90, 100) 100%);
+}
+
+#frame-3 {
+  background: linear-gradient(0, rgba(191, 191, 191) 0%, rgba(215, 180, 215) 80%);
+}
+
+.raindrop {
+  width: 1px;
+  top: -16px;
+  background: none;
+  border: none;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  position: absolute;
+  animation: fall-15 linear 500ms infinite;
+}
+
+#frame-3 .raindrop {
+  animation: fall-30 linear 500ms infinite;
+}
+
+.silhouette {
+  position: absolute;
+  background: url(silhouette.svg) bottom left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: invert(19.53%); /* Equivalent to rgb(50, 50, 50) */
+}
+
+#frame-2 .silhouette {
+  bottom: -25px;
+  left: -260px;
+  width: 300px;
+  height: 300px;
+}
+
+#frame-3 .silhouette {
+  bottom: -25px;
+  left: -240px;
+  width: 300px;
+  height: 300px;
+}
+
+@keyframes fall-15 {
+  0% {
+    top: -16px;
+    transform: translate(50px, 0) rotate(15deg);
+  }
+
+  100% {
+    top: 500px;
+    transform: translate(-50px, 0) rotate(15deg);
+  }
+}
+
+@keyframes fall-30 {
+  0% {
+    top: -16px;
+    transform: translate(100px, 0) rotate(30deg);
+  }
+
+  100% {
+    top: 500px;
+    transform: translate(-100px, 0) rotate(30deg);
+  }
+}
