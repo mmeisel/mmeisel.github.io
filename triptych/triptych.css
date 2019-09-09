@@ -50,24 +50,15 @@ html, body {
 
 .silhouette {
   position: absolute;
-  background: url(silhouette.svg) bottom left;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  filter: invert(19.53%); /* Equivalent to rgb(50, 50, 50) */
-}
-
-#frame-2 .silhouette {
-  bottom: -25px;
-  left: -260px;
-  width: 300px;
-  height: 300px;
-}
-
-#frame-3 .silhouette {
-  bottom: -25px;
-  left: -240px;
-  width: 300px;
-  height: 300px;
+  bottom: -21px;
+  right: 33.33%;
+  width: 250px;
+  height: 250px;
+  background-color: rgb(50, 50, 50);
+  mask: url(silhouette.svg) no-repeat 100% 100%;
+  -webkit-mask: url(silhouette.svg) no-repeat 100% 100%;
+  mask-size: contain;
+  -webkit-mask-size: contain;
 }
 
 @keyframes fall-15 {
