@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Very Low Quality JPEGs</title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <h1 class="main-title">
+    Very Low Quality JPEGs (2014, 2017)
+  </h1>
+  <main>
+    <p>
+      This series started as a desire to create poster-sized prints of some of my early digital
+      photos (circa 2005). Digital photography was in its infancy at the time, so these images are
+      fairly low resolution. Simply printing them without modification results in visible
+      pixellation at large sizes. Rather than attempt to hide the information lost to
+      the inadequacies of the technology, I decided to emphasize the images' digital origins.
+    </p>
+    <figure>
+      <div class="side-by-side">
+        <img src="images/lowq-sunset-original.jpg" alt="Sunset" style="width: 50%" />
+        <img src="images/lowq-sunset.jpg" alt="Sunset Modified" style="width: 50%" />
+      </div>
+      <figcaption>
+        Highway 5 Sunset, taken on a Sony Ericsson T610 (2004) vs. modified version (2017)
+      </figcaption>
+    </figure>
+    <p>
+      To accomplish this, I used a uniquely digital process &mdash; the ubiquitous
+      <a href="https://en.wikipedia.org/wiki/JPEG">JPEG compression algorithm</a> &mdash;
+      to intentionally discard additional information. (This idea was shamelessly stolen from
+      <a href="http://fakeisthenewreal.org/vlq/">Neil Freeman</a>.) The resulting images
+      are compressed at the lowest quality that the
+      <a href="https://imagemagick.org/script/convert.php">ImageMagick convert</a> tool would
+      allow, but rendered at very high resolutions. This allows the compression artifacts to
+      generate additional pixels beyond those in the low-resolution source material.
+    </p>
+    <figure>
+      <img src="images/lowq-bund.jpg" alt="The Bund" />
+      <figcaption>The Bund (captured 2006, modified 2014)</figcaption>
+    </figure>
+    <figure>
+      <img src="images/lowq-beijing-sky.jpg" alt="Beijing Sky" class="inline-image" />
+      <figcaption>Beijing Sky (captured 2006, modified 2014)</figcaption>
+    </figure>
+    <figure>
+      <img src="images/lowq-matatu.jpg" alt="Matatu" class="inline-image" />
+      <figcaption>Matatu in Mityana (captured 2006, modified 2014)</figcaption>
+    </figure>
+    <figure>
+      <img src="images/lowq-seine.jpg" alt="Reflections in the Seine" class="inline-image" />
+      <figcaption>Reflections in the Seine (captured 2004, modified 2014)</figcaption>
+    </figure>
+    <figure>
+      <img src="images/lowq-campanile.jpg" alt="The Campanile" class="inline-image" />
+      <figcaption>The Campanile (captured 2003, modified 2014)</figcaption>
+    </figure>
+  </main>
+</body>
+
+</html>
