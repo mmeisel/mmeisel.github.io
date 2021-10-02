@@ -114,19 +114,19 @@ nav {
 
 @media (prefers-reduced-motion: no-preference) {
   .image-grid > .animating img.pan-lr {
-    animation: 60s ease infinite alternate pan-lr;
+    animation: 60s ease 2 alternate forwards pan-lr;
   }
   .image-grid > .animating img.pan-rl {
-    animation: 60s ease infinite alternate pan-rl;
+    animation: 60s ease 2 alternate forwards pan-rl;
   }
   .image-grid > .animating img.pan-tb {
-    animation: 60s ease infinite alternate pan-tb;
+    animation: 60s ease 2 alternate forwards pan-tb;
   }
   .image-grid > .animating img.pan-bt {
-    animation: 60s ease infinite alternate pan-bt;
+    animation: 60s ease 2 alternate forwards pan-bt;
   }
   .image-grid > .animating img.fade-out {
-    animation: 5s ease infinite alternate fade-out;
+    animation: 5s ease 9 alternate forwards fade-out;
   }
 }
 
