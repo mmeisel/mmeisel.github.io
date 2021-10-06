@@ -164,7 +164,7 @@ nav {
 
 @keyframes pan-bt {
   from {
-    transform: translateY(calc(100% - 220px));
+    transform: translateY(calc(-100% + 220px));
   }
   to {
     transform: translateY(0);
