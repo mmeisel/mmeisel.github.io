@@ -28,9 +28,10 @@ body::after {
 figure {
   margin-inline: 0;
 }
-figure img {
+figure img, figure video {
   display: block;
   max-width: 100%;
+  margin: 0 auto;
 }
 
 figcaption {
@@ -126,7 +127,7 @@ nav {
     animation: 60s ease 2 alternate forwards pan-bt;
   }
   .image-grid > .animating img.fade-out {
-    animation: 5s ease 9 alternate forwards fade-out;
+    animation: 5s ease 12 alternate forwards fade-out;
   }
 }
 
