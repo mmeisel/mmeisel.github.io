@@ -15,7 +15,7 @@ body {
   text-align: justify;
 }
 body::after {
-  content: 'Copyright © 2021 Michael Meisel';
+  content: 'Copyright © 2022 Michael Meisel';
   color: grey;
   display: block;
   font-family: 'Big Shoulders Text', sans-serif;
