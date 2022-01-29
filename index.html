@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
   <meta charset="utf-8">
@@ -10,42 +10,22 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" type="text/css" href="/main.css">
   <title>Michael Meisel</title>
-  <script src="https://kit.fontawesome.com/ac7a85a09f.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+  <script src="/main.js" type="module"></script>
 </head>
 
 <body>
-  <h1 class="main-title">
+  <h1>
     Michael Meisel
-    <span class="social-links">
-      <a href="mailto:hello@meisel.dev"><i class="fas fa-envelope" title="Email"></i></a>
-      <a href="https://github.com/mmeisel/" target="_blank"><i class="fab fa-github" title="GitHub"></i></a>
-      <a href="https://www.linkedin.com/in/michaelmeisel/" target="_blank"><i class="fab fa-linkedin" title="LinkedIn"></i></a>
-    </span>
-    </h1>
+    <social-links style="font-size: 0.75em"></social-links>
+  </h1>
   <main class="image-grid">
-    <a href="observer.html">
-      <img src="images/thumb-observer.jpg" alt="Observer" class="pan-rl" />
+    <a href="work/" class="overlay-container">
+      <img src="/images/bond-flowchart.svg" alt="Professional Interests" class="pan-rl" />
+      <h2 class="overlay">Professional Interests</h2>
     </a>
-    <a href="timer.html">
-      <img src="images/thumb-timer.jpg" alt="Timer" class="pan-lr" />
-    </a>
-    <a href="mizrach.html" class="image-fade-container">
-      <img src="images/thumb-mizrach-original.jpg" alt="Mizrach" style="width: 100%;" />
-      <img src="images/thumb-mizrach.jpg" alt="Mizrach" style="width: 100%;" class="fade-out" />
-    </a>
-    <a href="jpegs.html" class="image-fade-container">
-      <img src="images/thumb-jpegs.jpg" alt="Very Low Quality JPEGs" style="height: 100%;" />
-      <img src="images/thumb-jpegs.jpg" alt="Very Low Quality JPEGs"
-        style="transform: translateX(calc(-100% + 220px)); height: 100%;"
-        class="fade-out"
-      />
-    </a>
-    <a href="hammer.html">
-      <img src="images/thumb-hammer.jpg" alt="THIS HAMMER" class="pan-bt" />
-    </a>
-    <a href="shrine.html">
-      <img src="images/thumb-shrine.jpg" alt="Player Piano" class="pan-lr" />
+    <a href="art/" class="overlay-container">
+      <img src="/images/thumb-observer.jpg" alt="Art and Design" class="pan-rl" />
+      <h2 class="overlay">Art and Design</h2>
     </a>
   </main>
 </body>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="/main.css">
+  <title>Wireless Networks</title>
+  <script src="/main.js" type="module"></script>
+</head>
+
+<body>
+  <common-header></common-header>
+  <h1>Wireless Networks (2004-)</h1>
+  <main>
+    <p>
+      My first professional exposure to wireless networks was at
+      <a href="https://inveneo.org">Inveneo</a>, where our mission was to bring computers,
+      telephones, and the internet to rural and highly underserved communities around the world.
+      When it came time for our first deployment (in rural Uganda), it was an all-hands-on-deck sort
+      of affair. We all chipped in setting up computers, solar panels, and a long-distance,
+      point-to-point WiFi network between rooftops.
+    </p>
+    <figure>
+      <img src="/images/inveneo-roof.jpg" alt="Rooftop Antenna" />
+      <figcaption>Setting up an antenna on a rooftop near Fort Portal, Uganda, 2005</figcaption>
+    </figure>
+    <p>
+      The power of networks, wireless ones in particular, stuck with me from my Inveneo days. Which
+      is probably part of the reason I was drawn to them as a research topic in my final two years
+      at UCLA.
+    </p>
+    <p>
+      In particular, I became interested in
+      <a href="https://en.wikipedia.org/wiki/Emergence">emergence</a> in complex systems, and how it
+      could be applied to network protocols. This began with an exploration of
+      <a href="https://irl.cs.ucla.edu/data/files/papers/meisel2009services.pdf">how to design
+      emergent services for wireless networks</a> in 2009, which was mostly a thought exercise and
+      only published as a university technical report. However, I quickly realized that emergent
+      behavior was a common property of complex biological systems, and decided to do a deep dive
+      into network protocols inspired by biology. The result was
+      <a href="http://irl.cs.ucla.edu/data/files/papers/meisel2010bio.pdf">a survey paper</a>
+      on the topic.
+    </p>
+    <figure>
+      <img src="/images/biosurvey.jpg" alt="Taxonomy" />
+      <figcaption>A taxonomy of biologically inspired research in computer networking</figcaption>
+    </figure>
+    <p>
+      At the time, my advisor, <a href="https://web.cs.ucla.edu/~lixia/">Professor Lixia Zhang</a>,
+      was just beginning an ambitious new research project called
+      <a href="https://named-data.net/">Named Data Networking</a>. NDN asserts that data, not hosts,
+      are the central element of modern networks. This suggests a radically different approach to
+      network routing: rather than asking for a particular server by address, ask for the data you
+      want by name. The data could be at any location. This allows any device in the network to
+      cache data and provide it to nearby nodes upon request.
+    </p>
+    <p>
+      Up until this point, my work on wireless networks had been concerned with <i>physical</i>
+      mobility of devices. However, we quickly realized that the same techniques could be naturally
+      extended to the <i>logical</i> mobility of content under the NDN model. In fact,
+      <a href="http://irl.cs.ucla.edu/data/files/papers/meisel2010adhoc.pdf">we argue</a> that NDN
+      is a <i>better</i> model for ad hoc networks than the traditional IP stack.
+    </p>
+    <p>
+      The culmination of my work was a new, multi-hop routing protocol for ad hoc wireless networks.
+      Initially called Listen First, Broadcast Later (LFBL), I later renamed it to Broadcast-Only
+      Named Data (BOND) after my collaborators (rightly) complained about the unpronounceability of
+      the acronym. BOND turned out to be the first complete protocol specification based on the NDN
+      model. The protocol is probably best explained in <a href="/docs/bond-slides.pdf">the slide
+      deck from my Ph.D. defense</a>.
+    </p>
+    <figure>
+      <img src="/images/bond-paths.svg" alt="BOND" />
+      <figcaption>Example paths found by the BOND protocol</figcaption>
+    </figure>
+    <p>
+      Years later, out of a desire to work on wireless network protocols again, I joined
+      <a href="https://swarm.space">Swarm</a> (now part of
+      <a href="https://www.spacex.com/">SpaceX</a>), a startup building tiny satellites for
+      affordable IoT connectivity. Though I never got a chance to work on their protocols directly
+      (primarily spending my time building their customer-facing
+      <!-- <a href="web.html">web application</a>), -->
+      web application),
+      I learned a great deal about satellite communications
+      from the incredible team there.
+    </p>
+    <p>
+      Relevant publications:
+      <ul>
+        <li>
+          <a href="/docs/bond.pdf"><i>BOND: Unifying mobile networks with named data</i></a>
+          [<a href="/docs/bond-slides.pdf">Slides</a>]<br />
+          Michael Meisel.
+          Ph.D. Dissertation, University of California, Los Angeles, 2011.
+        </li>
+        <li>
+          <a href="http://irl.cs.ucla.edu/data/files/papers/meisel2010adhoc.pdf">
+            <i>Ad hoc networking via named data</i></a>
+          [<a href="https://doi.org/10.1145/1859983.1859986">DOI</a>]<br />
+          Michael Meisel, Vasileios Pappas, and Lixia Zhang.
+          In MobiArch '10: Proceedings of the fifth ACM international workshop on Mobility in the
+          evolving internet architecture, 2010.
+        </li>
+        <li>
+          <a href="https://irl.cs.ucla.edu/data/files/papers/meisel2010listen.pdf">
+            <i>Listen first, broadcast later: Topology-agnostic forwarding under high dynamics</i>
+          </a><br />
+          Michael Meisel, Vasileios Pappas, and Lixia Zhang.
+          In Annual Conference of International Technology Alliance in Network and Information
+          Science, 2010.
+        </li>
+        <li>
+          <a href="http://irl.cs.ucla.edu/data/files/papers/meisel2010bio.pdf">
+            <i>A taxonomy of biologically inspired research in computer networking</i></a>
+          [<a href="https://doi.org/10.1016/j.comnet.2009.08.022">DOI</a>]<br />
+          Michael Meisel, Vasileios Pappas, and Lixia Zhang.
+          In <i>Computer Networks</i> 54.6, 2010.
+        </li>
+        <li>
+          <a href="https://irl.cs.ucla.edu/data/files/papers/meisel2009services.pdf">
+            <i>Emergent mobile services</i></a><br />
+          Michael Meisel, Vasileios Pappas, Petros Zerfos, and Lixia Zhang.
+          Technical Report 090015, UCLA Computer Science Department, 2009.
+        </li>
+      </ul>
+    </p>
+  </main>
+</body>
+
+</html>

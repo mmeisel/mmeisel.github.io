@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="/main.css">
+  <title>Internet Infrastructure</title>
+  <script src="/main.js" type="module"></script>
+</head>
+
+<body>
+  <common-header></common-header>
+  <h1>Internet Infrastructure (2007-)</h1>
+  <main>
+    <p>
+      My interest in the inner workings of the internet began in the spring of 2007, when my friend
+      <a href="https://www.linkedin.com/in/jenster112/">Daniel Jen</a> suggested we take
+      <a href="https://web.cs.ucla.edu/~lixia/">Professor Lixia Zhang</a>&rsquo;s graduate-level
+      course on internet research together. Dan and I collaborated on the course project, an
+      ambitious proposal to tweak the core infrastructure of the internet for better scalability.
+      This proposal became
+      <a
+        href="https://irl.cs.ucla.edu/data/files/techreports/ucla-cs-tr080004.pdf"
+      >APT: A practical tunneling architecture for routing scalability</a>,
+      a project which would lead us both to spend the rest of our graduate school careers working
+      with Professor Zhang in her <a href="https://irl.cs.ucla.edu/">Internet Research Lab</a>.
+    </p>
+    <figure>
+      <img src="/images/apt.jpg" />
+      <figcaption>
+        Tunneling packets through the internet core, as proposed by APT.
+      </figcaption>
+    </figure>
+    <p>
+      We
+      <a href="https://www.ietf.org/proceedings/69/slides/RRG-5.pdf">presented</a> our proposal to
+      the Internet Engineering Task Force&rsquo;s
+      <a href="https://datatracker.ietf.org/rg/rrg/about/">Routing Research Group</a> at their
+      semiannual meeting in November, 2007, but it never received much traction. This work has been
+      subsumed by <a href="https://named-data.net">Named Data Networking (NDN)</a>, which solves a
+      much larger infrastructure problem in a much more clever way, sweeping up scalability issues
+      in its wake.
+    </p>
+    <p>
+      I subsequently switched my research focus to
+      <a href="wireless.html">wireless networks</a> (and how to apply NDN in that context). However,
+      the majority of my labmates were still focused on internet infrastructure, and in particular
+      on measuring the real network. Two of these labmates were
+      <a href="https://www.linkedin.com/in/mohitlad/">Mohit Lad</a> and
+      <a href="https://www.linkedin.com/in/rveloso/">Ricardo Oliveira</a>, which is how I came to be
+      the first employee at their startup, <a href="https://thousandeyes.com">ThousandEyes</a> (now
+      part of <a href="https://cisco.com">Cisco</a>) in 2010.
+    </p>
+    <p>
+      ThousandEyes continued in the same vein of network measurement, analysis, and visualization
+      as Mohit and Ricardo&rsquo;s work at UCLA, but building commercial products. Our first product
+      was a novel system for monitoring the Domain Name System (DNS), a product for which I built
+      the entire measurement and data collection system. This code ran with little modification and
+      minimal maintenance for years (at least from 2010 through 2017), continuously providing data
+      to some of the world&rsquo;s largest tech companies.
+    </p>
+    <p>
+      I was also the sole developer of ThousandEyes Path Visualization from its inception through
+      the first few years. Path Visualization is a sort of visual multi-point-to-multi-point
+      traceroute, inferring the topology of the relevant slice of the internet from multiple
+      independent measurements. Path Visualization is still a flagship part of the ThousandEyes
+      product to this day, retaining most of the basic concepts and visual elements of the original
+      version.
+    </p>
+    <figure>
+      <img src="/images/te-path-vis.jpg" alt="ThousandEyes Path Visualization" />
+      <figcaption>ThousandEyes Path Visualization</figcaption>
+    </figure>
+    <p>
+      As the years went on, I took on a bigger <a href="leadership.html">leadership</a> role and
+      did less and less of the coding myself. Instead, I had the privilege of building and working
+      with an incredible team that, thanks in no small part to Ricardo&rsquo;s unmatched creativity
+      as CTO, continued to develop novel network data collection, troubleshooting, data analysis,
+      and visualization techniques.
+    </p>
+    <p>
+      Relevant publications:
+      <ul>
+        <li>
+          <a href="https://patents.google.com/patent/US10659325B2/en">
+            <i>Monitoring enterprise networks with endpoint agents</i></a><br />
+          Martin Dam, Michael Meisel, Nelson Rodrigues, Ricardo V. Oliveira, and Santiago Alessandri.
+          U.S. Patent 10,659,325, issued May 19, 2020.
+        </li>
+        <li>
+          <a href="https://patents.google.com/patent/US9729414B1/en">
+            <i>Monitoring service availability using distributed BGP routing feeds</i></a><br />
+          Ricardo V. Oliveira, Michael Meisel, and Ryan Braud.
+          U.S. Patent 9,729,414, issued August 8, 2017.
+        </li>
+        <li>
+          <a href="https://patents.google.com/patent/US9455890B2/en">
+            <i>Deep path analysis of application delivery over a network</i></a><br />
+          Mohit V. Lad, Ricardo V. Oliveira, Michael Meisel, and Ryan Braud.
+            U.S. Patent 9,455,890, issued September 27, 2016.
+        </li>
+        <li>
+          <a href="https://patents.google.com/patent/US9411787B1/en">
+            <i>Cross-layer troubleshooting of application delivery</i></a><br />
+          Mohit V. Lad, Ricardo V. Oliveira, Michael Meisel, and Ryan Braud.
+          U.S. Patent 9,411,787, issued August 9, 2016.
+        </li>
+        <li>
+          <a href="https://irl.cs.ucla.edu/data/files/techreports/ucla-cs-tr080004.pdf">
+            <i>APT: A practical tunneling architecture for routing scalability</i></a>
+          [<a href="https://doi.org/10.4018/978-1-4666-4305-5.ch004">DOI</a>]<br />
+          Dan Jen, Michael Meisel, Daniel Massey, Lan Wang, Beichuan Zhang, and Lixia Zhang.
+          In <i>Solutions for Sustaining Scalability in Internet Growth</i>, IGI Global, 2014.
+        </li>
+        <li>
+          <a href="http://conferences.sigcomm.org/hotnets/2008/papers/18.pdf">
+            <i>Towards a New Internet Routing Architecture:
+              Arguments for Separating Edges from Transit Core</i></a>
+          <br />
+          Dan Jen, Michael Meisel, He Yan, Dan Massey, Lan Wang, Beichuan Zhang, and Lixia Zhang.
+          In Proceedings of HotNets-VII, 2008.
+        </li>
+        <li>
+          <a href="https://datatracker.ietf.org/doc/html/draft-jen-apt-01">
+            <i>APT: A Practical Transit Mapping Service</i></a>
+          [<a href="https://www.ietf.org/proceedings/69/slides/RRG-5.pdf">Slides</a>]<br />
+          Dan Jen, Michael Meisel, Dan Massey, Lan Wang, Beichuan Zhang, and Lixia Zhang.
+          IETF Internet Draft (draft-jen-apt-01) presented at IETF69, 2007.
+        </li>
+      </ul>
+    </p>
+  </main>
+</body>
+
+</html>
