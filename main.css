@@ -107,6 +107,9 @@ social-links a:active, social-links a:hover {
 .image-grid img {
   object-fit: cover;
 }
+.image-grid img.pan-r {
+  transform: translateX(calc(-100% + 220px)); height: 100%;
+}
 .image-grid img.pan-lr, .image-grid img.pan-rl {
   height: 100%;
 }
