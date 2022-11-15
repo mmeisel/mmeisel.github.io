@@ -28,49 +28,78 @@
     </figure>
     <p>
       Inspired by the feedback kiosks sometimes found in public restrooms,
-      &ldquo;We value your feedback.&rdquo; is a speculative design piece that is meant to be both
-      appealing and appalling. A kiosk sits in front of a nondescript wall. The visitor is drawn to
-      the kiosk by a brightly lit sign reading &ldquo;How do you feel?&rdquo; On the kiosk are four
-      large, eminently pressable emoji buttons &mdash; a happy face, a neutral face, a slightly
-      unhappy face, and an angry face.
+      “We value your feedback.” is a speculative design piece that is meant to be both
+      appealing and appalling.
     </p>
     <p>
-      When a visitor presses one of the buttons, the kiosk visibly acknowledges their contribution.
-      Invisibly, they are being surveilled by a camera as they approach and interact with the kiosk.
-      The camera feed is clearly visible on the other side of the wall for everyone to see. When
-      they press a button, the kiosk takes their photo and uses software developed at Facebook to
-      perform facial attribute analysis. The software uses AI to &ldquo;determine&rdquo; their age,
-      gender, race, and current emotion, which are displayed along with their photo on the other
-      side of the wall. Their stated emotion (based on their button press) is compared to their
-      &ldquo;actual&rdquo; emotion (as determined by the AI). Liars are visibly flagged. Aggregate
-      statistics are also collected and displayed.
+      A kiosk sits in front of a nondescript wall. A brightly lit sign reading “How do you feel?”
+      and four large, colorful, blinking buttons draw the visitor in. Each eminently pressable
+      button is labeled with a different emoji: a happy face, a neutral face, a slightly unhappy
+      face, and an angry face.
+    </p>
+    <p>
+      When a visitor presses one of the buttons, the kiosk uses its lights to acknowledge their
+      contribution, but there is no other visible result. Invisibly, they are being surveilled by a
+      hidden camera as they approach and interact with the kiosk. At the moment the visitor presses
+      a button, the kiosk takes a picture of their face. This picture is sent over the internet to a
+      facial analysis service developed and managed by the artist exclusively for this piece. The
+      service is powered by <a href="https://github.com/serengil/deepface">DeepFace</a>, an
+      open-source software library
+      <a href="https://research.facebook.com/publications/deepface-closing-the-gap-to-human-level-performance-in-face-verification/">
+        developed by Facebook’s AI Research department</a>
+      that claims to determine someone’s age, gender, race, and current emotion from their
+      photograph. As improbable (and problematic) as this sounds, this is the type of analysis that
+      is routinely performed on images uploaded to social media. But unlike social media sites, this
+      service discards the photo and sends the analysis back to the kiosk.
+    </p>
+    <p>
+      Meanwhile, unseen from the front of the kiosk, the photo of the button presser’s face appears
+      on a large screen on the opposite side of the wall. When their facial analysis is complete,
+      the results are displayed on top of their photo. Their stated emotion (based on their button
+      press) is compared to their “actual” emotion (as determined by the AI). If the two emotions
+      don’t match, the button presser is clearly a liar, and will be labeled as such.
     </p>
     <figure>
-      <img src="/images/feedback-screen.jpg" alt="Feedback Kiosk Screen" />
+      <img src="/images/feedback-screen-liar.jpg" alt="A Lying Participant" />
       <figcaption>A participant lying to the AI</figcaption>
     </figure>
     <p>
-      The piece is meant to invite others to become voyeurs, hiding behind the wall and watching
-      as their fellow visitors approach. A few well-placed chairs encourage this behavior.
+      When no one has pressed the button recently, the live video feed from the hidden camera is
+      shown at the top of the screen, allowing viewers to secretly monitor their fellow patrons as
+      they approach the kiosk. At the bottom of the screen, viewers can see the photos of the three
+      most recent button pressers, along with their facial analyses. The kiosk also collects
+      aggregate statistics, which are shown next to the live video feed: how many people pressed
+      each of the four buttons, and how many of them were liars.
     </p>
+    <figure>
+      <img src="/images/feedback-screen-live.jpg" alt="Live Feed" />
+      <figcaption>The live camera feed, statistics, and last three photos</figcaption>
+    </figure>
+    <p>
+      The piece is meant to invite visitors to become voyeurs, hiding behind the wall and watching
+      as others approach. A few well-placed chairs encourage this behavior.
+    </p>
+    <p>
+      Far more intriguing is what happens when button-pressing visitors discover their image on the
+      other side of the wall. Some are horrified, but many are excited — it’s a new game to play!
+      They proceed to try to “look” their age and gender, or exaggerate their facial expression so
+      that the AI reads it “correctly.”
+    </p>
+    <figure>
+      <img src="/images/feedback-both-sides.jpg" alt="Feedback Kiosk Participants" />
+    </figure>
     <figure>
       <img src="/images/feedback-audience.jpg" alt="Feedback Kiosk Audience" />
       <figcaption>
-        Audience watching the screen behind the wall, temporary installation at Gray Area,
-        March 2022
+        Button presser and voyeurs, temporary installation at Gray Area, March 2022
       </figcaption>
     </figure>
     <p>
-      Far more intriguing is what happens when button-pressing visitors discover their image on the
-      other side of the wall. Some are horrified at being unwittingly surveiled. But many are
-      excited, seeing it as a new game. They proceed to attempt to &ldquo;look&rdquo; their age and
-      gender, or exaggerate their facial expression so that the AI reads it &ldquo;correctly.&rdquo;
-      Upon reflection, we are forced to reckon with how little it takes for even the most
-      rudimentary AI to control human behavior.
+      “We value your feedback.” lays bare our reflexive need to assign labels to ourselves and
+      others, even to the point that we are teaching computers how to do it. Upon reflection, we are
+      also forced to reckon with the power that labels wield over us — even the most rudimentary AI
+      can use them to control our behavior.
     </p>
-    <figure>
-      <img src="/images/feedback-wide.jpg" alt="Feedback Kiosk Participants" />
-    </figure>
   </main>
 </body>
 
